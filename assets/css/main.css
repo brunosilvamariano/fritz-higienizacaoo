@@ -5,55 +5,45 @@
     --cor-menu: #232323;
     --cor-texto-principal: #EAEAEA;
     --cor-texto-secundario: #B0B0B0;
-
     /* Cores de título e hover */
     --cor-titulo: var(--cor-texto-principal);
     --cor-hover: #ffd700; /* Amarelo para hover */
-
     /* Cores para botões */
     --cor-botao: var(--cor-primaria);
-    --cor-botao-hover: var(--cor-hover);
-
+    --cor-botao-hover: #1877f2;
     /* Cores específicas de ícones de redes sociais */
     --cor-github: #171515;
     --cor-linkedin: #0077b5;
     --cor-instagram: #e1306c;
     --cor-facebook: #1877f2;
     --cor-whatsapp: #25d366;
-
     /* Outras cores */
     --cor-erro: #B22222;
     --cor-sucesso: #2E8B57;
-
     /* Tons de cinza */
     --cor-cinza-claro: #A9A9A9;
     --cor-cinza-medio: #6C757D;
     --cor-cinza-escuro: #343A40;
     --cor-cinza-mais-escuro: #212529;
-
     /* Espaçamentos */
     --espacamento-secao: 80px;
 }
-
-
 * {
     text-decoration: none;
     list-style-type: none;
     border: none;
     box-sizing: border-box;
 }
-
 body {
     padding-top: 0px; /* Ajuste para header fixo */
     overflow-x: hidden; /* Impede o scroll horizontal */
+    background: #ffffff38;
 }
-
 html {
     overflow-x: hidden;
     font-size: 87.5%; /* Base de 14px */
     font-family: Poppins, sans-serif;
 }
-
 /* Compensação do scroll para a altura do cabeçalho */
 section {
     scroll-margin-top: 80px; /* Ajuste este valor conforme a altura do cabeçalho */
@@ -64,47 +54,106 @@ section {
         scroll-margin-top: 60px; /* Ajuste menor para dispositivos móveis */
     }
 }
-
-/**************************************** SEÇÃO BENIFICIOS ****************************************/
-
-
-
-/* Estilo para a seção de antes e depois */
-.before-after-slider {
-    position: relative;
-    overflow: hidden;
-    height: 250px; /* Ajuste a altura conforme necessário */
+/**************************************** SEÇÃO BENEFICIOS ****************************************/
+#beneficios {
+    padding: 50px 0;
 }
-
-.before-after-wrapper {
+.benefit-card {
+    background-color: #003a35; /* Cor de fundo do card */
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 300px; /* Altura mínima para uniformizar o tamanho dos cards */
     display: flex;
-    width: 200%;
-    transition: transform 0.3s ease;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.benefit-card:hover {
+    transform: translateY(-10px); /* Elevação do card ao passar o mouse */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.benefit-icon {
+    color: #ffe066; /* Cor do ícone */
 }
 
-.before-img, .after-img {
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+/**************************************** SEÇÃO ACORDION ****************************************/
+.accordion-button {
+    background-color: #ffffff;
+    color: #495057;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid #e0e0e0;
+    border-radius: 0.5rem;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.accordion-button:focus {
+    box-shadow: none; /* Remove o foco padrão */
+    outline: none;
+}
+.accordion-button:hover {
+    background-color: #e9f7e5; /* Fundo mais suave ao passar o mouse */
+    color: #28a745;
+    border-color: #28a745;
+}
+/* Estilizando o conteúdo do Accordion */
+.accordion-body {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-top: 2px solid #e0e0e0;
+    font-size: 1rem;
+    color: #6c757d;
+}
+/* Destaque no item ativo */
+.accordion-button:not(.collapsed) {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+/* Personalizando os ícones de expansão do Accordion */
+.accordion-button::after {
+    background-image: url('data:image/svg+xml,...'); /* Ícone customizado para o botão */
+}
+/* Animação suave do Accordion */
+.accordion-collapse {
+    transition: all 0.3s ease;
+}
+.accordion-item {
+    margin-bottom: 15px;
+}
+.accordion-header {
+    margin-bottom: 0;
+}
+.accordion-item:last-child .accordion-body {
+    border-bottom: none;
 }
 
-.before-after-wrapper:hover {
-    transform: translateX(-50%);
+/**************************************** SEÇÃO DEPOIMENTOS ****************************************/
+.depoimento-imagem {
+    width: 80px;  /* Tamanho da imagem */
+    height: 80px; /* Tamanho da imagem */
+    object-fit: cover; /* Garante que a imagem fique redonda sem distorção */
+    border: 3px solid #02833c; /* Borda verde para dar destaque */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil na imagem */
 }
 
-.before-img {
-    background-image: url('assets/images/sofa-antes.jpg');
+/* Melhorando o layout para os depoimentos */
+.carousel-item {
+    padding: 20px;
 }
 
-.after-img {
-    background-image: url('assets/images/sofa-depois.jpg');
+blockquote {
+    font-style: italic;
+    color: #555;
 }
 
-.card-body {
-    position: relative;
+blockquote p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
-
 
 /* Estilo do botão de WhatsApp fixo */
 .whatsapp-button {
