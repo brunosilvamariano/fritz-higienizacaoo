@@ -1,33 +1,19 @@
 :root {
-    /* Cores principais */
-    --cor-primaria: #4192fc; /* Azul padrão */
-    --cor-fundo: #ffffff;
-    --cor-menu: #232323;
-    --cor-texto-principal: #EAEAEA;
-    --cor-texto-secundario: #B0B0B0;
-    /* Cores de título e hover */
-    --cor-titulo: var(--cor-texto-principal);
-    --cor-hover: #ffd700; /* Amarelo para hover */
+    /* Cor de fundo principal da página */
+    --cor-fundo: #f8f9fa;
+  
+    /* Cores para textos */
+    --cor-titulo: #212529; /* Cor dos títulos */
+    --cor-subtitulo: #495057; /* Cor dos subtítulos */
+    --cor-paragrafo: #6c757d; /* Cor dos parágrafos */
+  
     /* Cores para botões */
-    --cor-botao: var(--cor-primaria);
-    --cor-botao-hover: #1877f2;
-    /* Cores específicas de ícones de redes sociais */
-    --cor-github: #171515;
-    --cor-linkedin: #0077b5;
-    --cor-instagram: #e1306c;
-    --cor-facebook: #1877f2;
-    --cor-whatsapp: #25d366;
-    /* Outras cores */
-    --cor-erro: #B22222;
-    --cor-sucesso: #2E8B57;
-    /* Tons de cinza */
-    --cor-cinza-claro: #A9A9A9;
-    --cor-cinza-medio: #6C757D;
-    --cor-cinza-escuro: #343A40;
-    --cor-cinza-mais-escuro: #212529;
-    /* Espaçamentos */
-    --espacamento-secao: 80px;
-}
+    --cor-botao: #3e98f8; /* Cor de fundo do botão */
+    --cor-fonte-botao: #ffffff; /* Cor do texto dentro do botão */
+    --cor-hover: #0056b3; /* Cor do botão ao passar o mouse */
+    --cor-border: #0056b3; 
+  }
+
 * {
     text-decoration: none;
     list-style-type: none;
@@ -54,133 +40,62 @@ section {
         scroll-margin-top: 60px; /* Ajuste menor para dispositivos móveis */
     }
 }
-/**************************************** SEÇÃO BENEFICIOS ****************************************/
-#beneficios {
-    padding: 50px 0;
-}
-.benefit-card {
-    background-color: #003a35; /* Cor de fundo do card */
-    color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 300px; /* Altura mínima para uniformizar o tamanho dos cards */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-.benefit-card:hover {
-    transform: translateY(-10px); /* Elevação do card ao passar o mouse */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-}
-.benefit-icon {
-    color: #ffe066; /* Cor do ícone */
+/**************************************** SEÇÃO HOME ****************************************/
+.hero-section {
+    position: relative;
+    overflow: hidden;
 }
 
-/**************************************** SEÇÃO ACORDION ****************************************/
-.accordion-button {
-    background-color: #ffffff;
-    color: #495057;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border: 2px solid #e0e0e0;
-    border-radius: 0.5rem;
-    padding: 15px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.hero-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que o vídeo cubra a área da seção */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
 }
-.accordion-button:focus {
-    box-shadow: none; /* Remove o foco padrão */
-    outline: none;
+
+.hero-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Melhor forma de adicionar sobreposição */
 }
-.accordion-button:hover {
-    background-color: #e9f7e5; /* Fundo mais suave ao passar o mouse */
-    color: #28a745;
-    border-color: #28a745;
-}
-/* Estilizando o conteúdo do Accordion */
-.accordion-body {
-    background-color: #ffffff;
-    padding: 20px 30px;
-    border-top: 2px solid #e0e0e0;
-    font-size: 1rem;
-    color: #6c757d;
-}
-/* Destaque no item ativo */
-.accordion-button:not(.collapsed) {
-    background-color: #28a745;
-    color: white;
-    border-color: #28a745;
-}
-/* Personalizando os ícones de expansão do Accordion */
-.accordion-button::after {
-    background-image: url('data:image/svg+xml,...'); /* Ícone customizado para o botão */
-}
-/* Animação suave do Accordion */
-.accordion-collapse {
+/**************************************** BOTÃO ****************************************/
+/* Botão principal com classe específica */
+a.btn.btn-whatsapp {
+    background-color: var(--cor-botao);
+    color: var(--cor-fonte-botao);
+    border: 2px solid var(--cor-botao);
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px; /* Botão arredondado */
     transition: all 0.3s ease;
 }
-.accordion-item {
-    margin-bottom: 15px;
+/* Efeito de hover */
+a.btn.btn-whatsapp:hover,
+a.btn.btn-whatsapp:focus {
+    background-color: var(--cor-hover);
+    color: var(--cor-fonte-botao);
+    border-color: var(--cor-hover);
+    transform: translateY(-3px); /* Elevação ao passar o mouse */
 }
-.accordion-header {
-    margin-bottom: 0;
+/* Efeito de foco */
+a.btn.btn-whatsapp:active {
+    transform: translateY(1px); /* Leve depressão ao clicar */
 }
-.accordion-item:last-child .accordion-body {
-    border-bottom: none;
+/* Ícone ao lado do texto */
+a.btn.btn-whatsapp i {
+    font-size: 20px; /* Ajuste do tamanho do ícone */
 }
-
-/**************************************** SEÇÃO DEPOIMENTOS ****************************************/
-.depoimento-imagem {
-    width: 80px;  /* Tamanho da imagem */
-    height: 80px; /* Tamanho da imagem */
-    object-fit: cover; /* Garante que a imagem fique redonda sem distorção */
-    border: 3px solid #02833c; /* Borda verde para dar destaque */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil na imagem */
-}
-
-/* Melhorando o layout para os depoimentos */
-.carousel-item {
-    padding: 20px;
-}
-
-blockquote {
-    font-style: italic;
-    color: #555;
-}
-
-blockquote p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* Estilo do botão de WhatsApp fixo */
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: white;
-    border-radius: 50px;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.whatsapp-button i {
-    margin-right: 8px;
-}
-
-.whatsapp-button span {
-    font-size: 14px;
-    display: none; /* Texto adicional somente para telas maiores */
-}
-
-@media (min-width: 768px) {
-    .whatsapp-button span {
-        display: inline;
-    }
+/* Efeito de animação */
+[data-aos="zoom-in"] {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
 }

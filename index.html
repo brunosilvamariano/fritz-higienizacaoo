@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa de Higienização | Lavanderia</title>
+    <title>Fritz Higienização</title>
 
     <!-- Link para o CSS do Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap/dist/css/bootstrap.min.css">
@@ -24,449 +24,56 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Início da Seção Hero (Cabeçalho) -->
-    <header class="container-fluid d-flex align-items-center justify-content-center text-center text-white vh-100" style="background-image: url('assets/images/banner.jpg'); background-size: cover; background-position: center;">
+   <!-- Início da Seção home -->
+   <section class="container-fluid d-flex align-items-center justify-content-center text-center text-white vh-100 hero-section" role="banner">
+        <!-- Vídeo de fundo -->
+        <video autoplay muted loop>
+            <source src="assets/images/video-1920-1080.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+
         <!-- Sobreposição escura para melhor contraste com o texto -->
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
-        <!-- Conteúdo principal da seção Hero -->
-        <div class="position-relative z-3">
-            <!-- Logo da empresa -->
-            <img src="https://via.placeholder.com/300x150" alt="Logo da empresa" class="img-fluid mb-4" style="max-width:300px; height:auto;" data-aos="fade-up" data-aos-delay="300">
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <!-- Conteúdo principal da Seção Hero -->
+        <div class="position-relative z-3" role="presentation">
+            <!-- Logo da empresa com descrição acessível -->
+            <figure class="mb-4" data-aos="fade-down" data-aos-delay="200">
+                <img src="assets/images/logo-300-150.svg" alt="Logotipo da Empresa [Nome]" class="img-fluid" style="max-width:300px; height:auto;">
+                <figcaption class="sr-only">Logotipo da Empresa [Nome]</figcaption>
+            </figure>
+
             <!-- Título principal -->
-            <h1 class="display-4 fw-bold" id="hero-title" data-aos="fade-up" data-aos-delay="200">Higienização Profissional de Estofados</h1>
+            <h1 class="display-4 fw-bold" id="hero-title" data-aos="fade-up" data-aos-delay="400">
+                Higienização e Impermeabilização 
+            </h1>
+
             <!-- Descrição breve -->
-            <p class="lead mb-4" id="hero-description" data-aos="fade-up" data-aos-delay="400">
+            <p class="lead mb-4" id="hero-description" data-aos="fade-up" data-aos-delay="600">
                 Cuide da saúde e bem-estar do seu lar com nossos serviços de limpeza e higienização profissional de estofados.
             </p>
-            <!-- Botão de chamada para ação (CTA) -->
-            <a href="https://wa.me/55479999999999?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20higienização%20de%20estofados.%20😊%20Sou%20[Seu%20Nome]%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20higienização%20para%20sofá%2C%20colchão%2C%20ou%20cadeiras.%20Em%20breve%2C%20aguardo%20o%20retorno%20com%20o%20orçamento.%20Muito%20obrigado!" class="btn btn-success btn-lg" target="_blank" rel="noopener" aria-label="Solicitar orçamento via WhatsApp" data-aos="zoom-in" data-aos-delay="600"><i class="bi bi-whatsapp me-2"></i>Quero solicitar um orçamento!</a>
+
+            <!-- Botão de Chamada para Ação (CTA) -->
+            <a href="https://wa.me/55479999999999?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20os%20serviços%20de%20higienização%20de%20estofados.%20Poderiam%20me%20informar%20os%20detalhes%20para%20sofás,%20colchões%20e%20cadeiras?%20Aguardo%20o%20orçamento.%20Obrigado!"
+                class="btn btn-whatsapp btn-lg" 
+                target="_blank" 
+                rel="noopener" 
+                aria-label="Solicitar orçamento via WhatsApp" 
+                data-aos="zoom-in" 
+                data-aos-delay="800">
+                    <i class="bi bi-whatsapp me-2"></i> Peça um orçamento agora
+            </a>
         </div>
-    </header>
-    <!-- Fim da Seção Hero (Cabeçalho) -->
+    </section>
+
+    <!-- Fim da Seção home -->
+
+
+
     <!-- Início do conteúdo principal (dentro de <main>) -->
     <main>
-      <!-- Início da Seção de Benefícios com Cards -->
-        <section id="beneficios" class="container-fluid py-5">
-            <div class="container">
-                 <!-- Título da Seção -->
-                <header class="section-header text-center mb-4" data-aos="fade-up">
-                    <h2 class="display-4 fs-2 fw-bold">Nossos Benefícios</h2>
-                </header>
-                <div class="row justify-content-center text-center">
-                    <!-- Card 1: Remoção de Maus Odores -->
-                    <article class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="benefit-card p-4">
-                            <i class="fa fa-smile-o fa-3x mb-3 benefit-icon"></i>
-                            <h5 class="fw-bold">Remoção de Maus Odores</h5>
-                            <p>Eliminamos completamente maus odores, como urina pet, garantindo um ambiente fresco e saudável.</p>
-                        </div>
-                    </article>
-                    <!-- Card 2: Produtos Veganos e Biodegradáveis -->
-                    <article class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="benefit-card p-4">
-                            <i class="fa fa-leaf fa-3x mb-3 benefit-icon"></i>
-                            <h5 class="fw-bold">Produtos Veganos e Biodegradáveis</h5>
-                            <p>Utilizamos apenas produtos profissionais, veganos e biodegradáveis, para garantir eficiência e respeito ao meio ambiente.</p>
-                        </div>
-                    </article>
-                    <!-- Card 3: Remoção de Ácaros e Manchas -->
-                    <article class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="benefit-card p-4">
-                            <i class="fa fa-shield fa-3x mb-3 benefit-icon"></i>
-                            <h5 class="fw-bold">Remoção de Ácaros e Manchas</h5>
-                            <p>Eliminamos até 99% dos ácaros e 80% das manchas, promovendo um ambiente mais saudável para sua família.</p>
-                        </div>
-                    </article>
-                    <!-- Card 4: Higienização e Tratamento Estético -->
-                    <article class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="benefit-card p-4">
-                            <i class="fa fa-tint fa-3x mb-3 benefit-icon"></i>
-                            <h5 class="fw-bold">Higienização e Tratamento Estético</h5>
-                            <p>Além de higienizar, tratamos esteticamente os seus estofados, deixando-os como novos e com aparência renovada.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- Início da Seção "Quem Somos" -->
-        <section id="quem-somos" class="container py-5">
-            <div class="section-header text-center mb-4" data-aos="fade-up">
-                <h2 class="fs-2 fw-bold">Sobre a Empresa</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, alias?</p>
-            </div>
-            <div class="row align-items-center">
-                <!-- Imagem à esquerda (representando a empresa ou os serviços) -->
-                <figure class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
-                    <img src="https://via.placeholder.com/600x400" alt="Equipe de Higienização de Estofados da Fritz Higienização" class="img-fluid rounded">
-                    <figcaption class="text-center mt-2">Equipe de Higienização da empresa</figcaption>
-                </figure>
-                <!-- Conteúdo à direita com subtítulo, parágrafos e botão -->
-                <article class="col-md-6" data-aos="fade-left">
-                    <h3>Nosso Compromisso com a Qualidade</h3>
-                    <p>Nosso principal objetivo é oferecer mais do que uma simples limpeza; queremos levar saúde, conforto e bem-estar aos nossos clientes. Para isso, contamos com equipamentos modernos e produtos de alta qualidade, garantindo o cuidado ideal para você e para o seu estofado.</p>
-                    <!-- Botão para solicitar orçamento -->
-                    <a href="https://wa.me/554799051278?text=Gostaria%20de%20solicitar%20um%20orçamento%20para%20higienização%20de%20estofados." class="btn btn-success btn-lg mt-3" target="_blank" rel="noopener" aria-label="Solicitar orçamento via WhatsApp" data-aos="zoom-in">
-                        <i class="bi bi-whatsapp me-2"></i>Quero solicitar um orçamento!
-                    </a>
-                </article>
-            </div>
-        </section>
-        <!-- Início da Seção de Serviços com Cards -->
-        <section id="beneficios" class="container-fluid py-5">
-            <div class="container">
-                <!-- Título da Seção -->
-                <header class="section-header text-center mb-4" data-aos="fade-up">
-                    <h2 class="display-4 fs-2 fw-bold">Nossos Serviços</h2>
-                    <p>Confira alguns dos nossos serviços de higienização e renovação de estofados</p>
-                </header>
-                <div class="row justify-content-center text-center">
-                    <!-- Card 1: Remoção de Maus Odores -->
-                    <article class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="benefit-card p-4">
-                            <i class="bi bi-cloud-sun fa-3x mb-3 benefit-icon"></i> <!-- Ícone de nuvem com sol (frescor) -->
-                            <h5 class="fw-bold">Remoção de Maus Odores</h5>
-                            <p>Eliminamos completamente maus odores, como urina pet, garantindo um ambiente fresco e saudável.</p>
-                        </div>
-                    </article>
-                    <!-- Card 2: Produtos Veganos e Biodegradáveis -->
-                    <article class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="benefit-card p-4">
-                            <i class="bi bi-recycle fa-3x mb-3 benefit-icon"></i> <!-- Ícone de reciclagem (eco-friendly) -->
-                            <h5 class="fw-bold">Produtos Veganos e Biodegradáveis</h5>
-                            <p>Utilizamos apenas produtos profissionais, veganos e biodegradáveis, para garantir eficiência e respeito ao meio ambiente.</p>
-                        </div>
-                    </article>
-                    <!-- Card 3: Remoção de Ácaros e Manchas -->
-                    <article class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="benefit-card p-4">
-                            <i class="bi bi-shield-check fa-3x mb-3 benefit-icon"></i> <!-- Ícone de escudo para proteção -->
-                            <h5 class="fw-bold">Remoção de Ácaros e Manchas</h5>
-                            <p>Eliminamos até 99% dos ácaros e 80% das manchas, promovendo um ambiente mais saudável para sua família.</p>
-                        </div>
-                    </article>
-                    <!-- Card 4: Higienização e Tratamento Estético -->
-                    <article class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="benefit-card p-4">
-                            <i class="bi bi-paint-bucket fa-3x mb-3 benefit-icon"></i> <!-- Ícone de balde para limpeza e estética -->
-                            <h5 class="fw-bold">Higienização e Tratamento Estético</h5>
-                            <p>Além de higienizar, tratamos esteticamente os seus estofados, deixando-os como novos e com aparência renovada.</p>
-                        </div>
-                    </article>
-                </div>
-                <!-- Botão para solicitar orçamento -->
-                <div class="d-flex justify-content-center">
-                    <a href="https://wa.me/55479999999999?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20higienização%20de%20estofados.%20😊%20Sou%20[Seu%20Nome]%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20higienização%20para%20sofá%2C%20colchão%2C%20ou%20cadeiras.%20Em%20breve%2C%20aguardo%20o%20retorno%20com%20o%20orçamento.%20Muito%20obrigado!" 
-                        class="btn btn-success btn-lg" target="_blank" rel="noopener" aria-label="Solicitar orçamento via WhatsApp" data-aos="zoom-in" data-aos-delay="600">
-                        <i class="bi bi-whatsapp me-2"></i>Quero solicitar um orçamento!
-                    </a>
-                </div>
-            </div>
-        </section>     
-       <!-- Seção Nossos Trabalhos -->
-        <section id="nossos-trabalhos" class="py-5" aria-labelledby="trabalhos-title" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="300">
-            <div class="container">
-                <header class="bg-transparent text-center">
-                    <h2 id="trabalhos-title" class="section-title mb-4 fw-bold fs-2">Nossos Trabalhos</h2>
-                    <p>Confira alguns dos nossos serviços de higienização e renovação de estofados</p>
-                </header>
-                <div id="trabalhosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" aria-labelledby="trabalhos-title" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="500">
-                    <div class="carousel-inner">
-                        <!-- Slide 1 -->
-                        <article class="carousel-item active" role="group" aria-roledescription="slide" aria-label="Slide 1">
-                            <div class="row flex-nowrap">
-                                <div class="col-md-4 col-12 mb-4">
-                                    <div class="gallery-card position-relative">
-                                        <img src="https://via.placeholder.com/350x200" class="d-block w-100" alt="Higienização de Sofá">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-12 mb-4">
-                                    <div class="gallery-card position-relative">
-                                        <img src="https://via.placeholder.com/350x200" class="d-block w-100" alt="Higienização de Colchão">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-12 mb-4">
-                                    <div class="gallery-card position-relative">
-                                        <img src="https://via.placeholder.com/350x200" class="d-block w-100" alt="Limpeza de Tapetes">
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <!-- Slide 2 -->
-                        <article class="carousel-item" role="group" aria-roledescription="slide" aria-label="Slide 2">
-                            <div class="row flex-nowrap">
-                                <div class="col-md-4 col-12 mb-4">
-                                    <div class="gallery-card position-relative">
-                                        <img src="https://via.placeholder.com/350x200" class="d-block w-100" alt="Impermeabilização de Sofá">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-12 mb-4">
-                                    <div class="gallery-card position-relative">
-                                        <img src="https://via.placeholder.com/350x200" class="d-block w-100" alt="Limpeza de Poltrona">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-12 mb-4">
-                                    <div class="gallery-card position-relative">
-                                        <img src="https://via.placeholder.com/350x200" class="d-block w-100" alt="Limpeza de Carpetes">
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <!-- Indicadores -->
-                    <div class="d-flex justify-content-center mt-4" aria-label="Indicadores de slides da galeria">
-                        <button type="button" data-bs-target="#trabalhosCarousel" data-bs-slide-to="0" class="active mx-2" aria-current="true" aria-label="Slide 1" style="background-color: #02833c; border: none; width: 40px; height: 5px;"></button>
-                        <button type="button" data-bs-target="#trabalhosCarousel" data-bs-slide-to="1" class="mx-2" aria-label="Slide 2" style="background-color: #02833c; border: none; width: 40px; height: 5px;"></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-         <!-- Seção Metodo de Limpeza -->
-        <section id="metodo-limpeza" class="py-5 text-center bg-dark" aria-labelledby="metodo-limpeza-title" data-aos="fade-up" data-aos-duration="1000">
-            <div class="container">
-                <header class="mb-4">
-                    <h2 id="metodo-limpeza-title" class="fs-2 text-light fw-bold">Método de Limpeza x Limpeza Comum</h2>
-                    <p class="lead text-secondary">Descubra as vantagens do nosso método profissional de limpeza em comparação com a limpeza comum.</p>
-                </header>
-                <div class="row">
-                    <!-- Coluna Método de Limpeza -->
-                    <div class="col-md-6 mb-4">
-                        <div class="card shadow-sm border-0 rounded-3" data-aos="zoom-in" data-aos-duration="1000">
-                            <div class="card-body">
-                                <h4 class="card-title text-success fw-bold">Método de Limpeza</h4>
-                                <p class="card-text text-dark">A limpeza profunda com equipamentos e produtos profissionais garante um resultado impecável e duradouro.</p>
-                                <ul class="list-unstyled text-left">
-                                    <li><i class="bi bi-check-circle-fill text-success"></i> Limpeza profunda e eficaz.</li>
-                                    <li><i class="bi bi-check-circle-fill text-success"></i> Produtos específicos para cada tipo de tecido.</li>
-                                    <li><i class="bi bi-check-circle-fill text-success"></i> Eliminação de bactérias e ácaros.</li>
-                                    <li><i class="bi bi-check-circle-fill text-success"></i> Resultados que duram muito mais.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Coluna Limpeza Comum -->
-                    <div class="col-md-6 mb-4">
-                        <div class="card shadow-sm border-0 rounded-3" data-aos="zoom-in" data-aos-duration="1000">
-                            <div class="card-body">
-                                <h4 class="card-title text-warning fw-bold">Limpeza Comum</h4>
-                                <p class="card-text text-dark">A limpeza comum pode até remover sujeiras superficiais, mas não elimina manchas profundas nem garante a saúde do ambiente.</p>
-                                <ul class="list-unstyled text-left">
-                                    <li><i class="bi bi-x-circle-fill text-danger"></i> Limpeza superficial e sem eficácia contra manchas.</li>
-                                    <li><i class="bi bi-x-circle-fill text-danger"></i> Uso de produtos genéricos e não especializados.</li>
-                                    <li><i class="bi bi-x-circle-fill text-danger"></i> Não elimina bactérias nem ácaros.</li>
-                                    <li><i class="bi bi-x-circle-fill text-danger"></i> Menor durabilidade nos resultados.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <!-- Botão para solicitar orçamento -->
-                 <div class="d-flex justify-content-center">
-                    <a href="https://wa.me/55479999999999?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20higienização%20de%20estofados.%20😊%20Sou%20[Seu%20Nome]%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20higienização%20para%20sofá%2C%20colchão%2C%20ou%20cadeiras.%20Em%20breve%2C%20aguardo%20o%20retorno%20com%20o%20orçamento.%20Muito%20obrigado!" 
-                        class="btn btn-success btn-lg" target="_blank" rel="noopener" aria-label="Solicitar orçamento via WhatsApp" data-aos="zoom-in" data-aos-delay="600">
-                        <i class="bi bi-whatsapp me-2"></i>Quero solicitar um orçamento!
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Seção de Perguntas Frequentes -->
-        <section id="faq" class="py-5 custom-faq" aria-labelledby="faq-title" data-aos="fade-up" data-aos-duration="1000">
-            <div class="container">
-                <header class="text-center mb-4">
-                    <h2 id="faq-title" class="fs-2 fw-bold">Perguntas Frequentes</h2>
-                    <p class="text-secondary lead">Tire suas dúvidas antes de contratar nossos serviços</p>
-                </header>
-                <!-- Accordion FAQ -->
-                <div class="accordion" id="faqAccordion">
-                    <!-- Pergunta 1 -->
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="faqHeadingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
-                                Qual a frequência recomendada para higienização de estofados?
-                            </button>
-                        </h3>
-                        <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Recomenda-se a higienização de estofados a cada 6 a 12 meses, dependendo do uso e da presença de crianças ou pets em casa. Isso ajuda a manter o ambiente limpo e livre de ácaros e bactérias.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pergunta 2 -->
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="faqHeadingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
-                                Os produtos utilizados são seguros para crianças e animais de estimação?
-                            </button>
-                        </h3>
-                        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Sim, todos os produtos que utilizamos são veganos, biodegradáveis e seguros para crianças e animais, garantindo uma higienização eficaz sem prejudicar a saúde da sua família.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pergunta 3 -->
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="faqHeadingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
-                                Quanto tempo leva para que os estofados sequem após a higienização?
-                            </button>
-                        </h3>
-                        <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                O tempo de secagem varia entre 4 a 6 horas, dependendo do tipo de estofado e das condições do ambiente, como ventilação e temperatura.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pergunta 4 -->
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="faqHeadingFour">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
-                                É necessário desocupar a área onde o serviço será realizado?
-                            </button>
-                        </h3>
-                        <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Recomendamos que a área esteja livre de objetos pessoais para facilitar o acesso ao estofado e agilizar o processo de higienização.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Seção de Depoimentos -->
-        <section id="depoimentos" class="py-5" aria-labelledby="depoimentos-title" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="300">
-            <div class="container">
-                <!-- Título da Seção -->
-                <header class="bg-transparent text-center mb-5">
-                    <h2 id="depoimentos-title" class="section-title mb-4 fw-bold fs-3">O que nossos clientes dizem</h2>
-                    <p>Veja o que nossos clientes têm a dizer sobre nossos serviços de higienização e renovação de estofados</p>
-                </header>
-                <!-- Carousel de Depoimentos -->
-                <div id="depoimentosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" aria-labelledby="depoimentos-title" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="500">
-                    <div class="carousel-inner">
-                        <!-- Depoimento 1 -->
-                        <article class="carousel-item active" role="group" aria-roledescription="slide" aria-label="Depoimento 1">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="col-4 text-center">
-                                    <!-- Imagem em cima, pequena e estilizada -->
-                                    <img src="https://via.placeholder.com/80" class="rounded-circle mb-3 depoimento-imagem" alt="João Silva">
-                                </div>
-                                <div class="col-8 text-center">
-                                    <h5 class="fw-bold">João Silva</h5>
-                                    <p class="text-muted">Empresário</p>
-                                    <div class="d-flex justify-content-center mb-3">
-                                        <!-- Estrelas para avaliação -->
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                    </div>
-                                    <blockquote class="blockquote">
-                                        <p class="mb-4">"A equipe da Fritz Higienização fez um trabalho impecável! Meu sofá ficou como novo."</p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </article>
-                        <!-- Depoimento 2 -->
-                        <article class="carousel-item" role="group" aria-roledescription="slide" aria-label="Depoimento 2">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="col-4 text-center">
-                                    <img src="https://via.placeholder.com/80" class="rounded-circle mb-3 depoimento-imagem" alt="Maria Oliveira">
-                                </div>
-                                <div class="col-8 text-center">
-                                    <h5 class="fw-bold">Maria Oliveira</h5>
-                                    <p class="text-muted">Dona de Casa</p>
-                                    <div class="d-flex justify-content-center mb-3">
-                                        <!-- Estrelas para avaliação -->
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                    </div>
-                                    <blockquote class="blockquote">
-                                        <p class="mb-4">"Estou muito satisfeita com o serviço! A limpeza do meu colchão foi excelente."</p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </article>
-                        <!-- Depoimento 3 -->
-                        <article class="carousel-item" role="group" aria-roledescription="slide" aria-label="Depoimento 3">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <div class="col-4 text-center">
-                                    <img src="https://via.placeholder.com/80" class="rounded-circle mb-3 depoimento-imagem" alt="Carlos Mendes">
-                                </div>
-                                <div class="col-8 text-center">
-                                    <h5 class="fw-bold">Carlos Mendes</h5>
-                                    <p class="text-muted">Administrador</p>
-                                    <div class="d-flex justify-content-center mb-3">
-                                        <!-- Estrelas para avaliação -->
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
-                                    </div>
-                                    <blockquote class="blockquote">
-                                        <p class="mb-4">"Profissionais qualificados e atenciosos. O tapete da minha sala ficou impecável."</p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <!-- Indicadores -->
-                    <div class="d-flex justify-content-center mt-4" aria-label="Indicadores de slides de depoimentos">
-                        <button type="button" data-bs-target="#depoimentosCarousel" data-bs-slide-to="0" class="active mx-2" aria-current="true" aria-label="Depoimento 1" style="background-color: #02833c; border: none; width: 40px; height: 5px;"></button>
-                        <button type="button" data-bs-target="#depoimentosCarousel" data-bs-slide-to="1" class="mx-2" aria-label="Depoimento 2" style="background-color: #02833c; border: none; width: 40px; height: 5px;"></button>
-                    </div>
-                </div>
-            </div>
-        </section>
+    
     </main>
-   <!-- Rodapé -->
-   <footer class="bg-dark text-light pt-5 pb-4">
-    <div class="container">
-        <div class="row">
-            <!-- Coluna do Mapa -->
-            <div class="col-md-4 mb-4">
-                <h5 class="text-success fw-bold">Nosso Endereço</h5>
-                <p>Av. Exemplo, 123 - Centro, Cidade, Estado</p>
-                <!-- Mapa Embutido -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459544.10579131305!2d-49.38886501491912!3d-25.86327840218599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb047df2b28ef%3A0xbf208682735a91d!2sShopping%20Mueller%20Joinville!5e0!3m2!1spt-BR!2sbr!4v1731141628925!5m2!1spt-BR!2sbr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <!-- Coluna de Redes Sociais -->
-            <div class="col-md-4 mb-4 text-center">
-                <h5 class="text-success fw-bold">Siga-nos nas Redes Sociais</h5>
-                <div class="d-flex justify-content-center">
-                    <a href="#" class="text-light me-3" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="#" class="text-light me-3" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-                    <a href="#" class="text-light me-3" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-                    <a href="#" class="text-light" aria-label="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
-                </div>
-                <p class="mt-3">Parcelamento em até <strong>6x</strong> sem juros no cartão!</p>
-            </div>
-            <!-- Coluna de Contato e Informações Rápidas -->
-            <div class="col-md-4 mb-4">
-                <h5 class="text-success fw-bold">Entre em Contato</h5>
-                <p>Email: contato@fritz.com.br</p>
-                <p>Telefone: (11) 1234-5678</p>
-                <p>Horário de Atendimento: Seg - Sex, 8h às 18h</p>
-            </div>
-        </div>
-    </div>
-    <!-- Rodapé Inferior -->
-    <div class="text-center py-3 bg-secondary">
-        <p class="mb-0">&copy; 2024 BHK DevXpert. Todos os direitos reservados.</p>
-    </div>
-    <!-- Botão de WhatsApp Fixo -->
-    <a href="https://wa.me/5511999999999?text=Olá, gostaria de saber mais sobre os serviços e promoções da Fritz Higienização!" target="_blank" class="whatsapp-button" aria-label="Contato via WhatsApp - Parcelamento em até 6x" role="button">
-        <i class="fab fa-whatsapp fa-3x"></i>
-    </a>
-</footer>
 
 
     <!-- Script para o AOS -->
