@@ -125,6 +125,7 @@ section.container h3 {
 /* Container para a seção */
 section.container {
     padding: 80px 0; /* Espaçamento superior e inferior */
+    overflow: hidden; /* Impede que o conteúdo saia da área visível */
 }
 
 /* Títulos principais da seção */
