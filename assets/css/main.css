@@ -80,8 +80,7 @@ a.btn.btn-whatsapp {
     font-weight: 500;
     border-radius: 4px; /* Botão arredondado */
     transition: all 0.3s ease;
-}
-/* Efeito de hover */
+} /* Efeito de hover */
 a.btn.btn-whatsapp:hover,
 a.btn.btn-whatsapp:focus {
     background-color: var(--cor-hover);
