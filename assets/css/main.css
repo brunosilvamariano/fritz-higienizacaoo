@@ -149,11 +149,9 @@ section {
 .benefits-section h2 {
     color: var(--cor-titulo);
 }
-
 .benefits-section p.lead {
     color: var(--cor-subtitulo);
 }
-
 /* Estilização dos Cards */
 .benefits-card {
     background: white;
@@ -162,24 +160,20 @@ section {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .benefits-card:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.12);
 }
-
 /* Ícones */
 .benefits-card i {
     color: var(--cor-botao);
 }
-
 /* Títulos e Parágrafos */
 .benefits-card h3 {
     color: var(--cor-titulo);
     font-size: 1.25rem;
     margin-top: 15px;
 }
-
 .benefits-card p {
     color: var(--cor-paragrafo);
     font-size: 1rem;
@@ -201,16 +195,13 @@ section {
     transition: all 0.3s ease-in-out;
     white-space: nowrap;
 }
-
 .btn-whatsapp:hover {
     box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
     transform: scale(1.05);
 }
-
 .btn-whatsapp i {
     font-size: 20px;
 }
-
 /* Responsividade */
 @media (max-width: 480px) {
     .btn-whatsapp {
@@ -222,7 +213,6 @@ section {
         font-size: 18px;
     }
 }
-
 @media (max-width: 360px) {
     .btn-whatsapp {
         font-size: 13px;
@@ -242,24 +232,20 @@ section {
     max-width: 100px; /* Ajusta o tamanho das miniaturas */
     height: auto;
 }
-
 /* Adicionando o efeito de hover */
 .video-thumb:hover {
     transform: scale(1.1); /* Aumenta o tamanho da miniatura ao passar o mouse */
 }
-
 /* Fazendo as miniaturas ficarem menores mas ainda bem visíveis */
 .video-thumb {
     width: 100%;
 }
-
 /* Responsividade para as miniaturas em telas menores */
 @media (max-width: 768px) {
     .video-thumb {
         max-width: 80px; /* Tamanho menor para dispositivos móveis */
     }
 }
-
 /**************************************** ANTES E DEPOIS ****************************************/  
 #gallery h2 {
     font-size: 2rem;
@@ -267,24 +253,20 @@ section {
     text-align: center;
     margin-bottom: 30px; /* Espaço abaixo do título */
 }
-
 #gallery .text-muted {
     color: var(--cor-paragrafo) !important; /* Usando a cor do parágrafo */
 }
-
 /* Não é necessário o uso de ::after para a linha */
 #gallery h2 {
     position: relative;
     padding-bottom: 10px;
 }
-
 #gallery .before-after-container {
     position: relative;
     overflow: hidden;
     height: 300px;
     transition: all 0.3s ease;
 }
-
 /* Usando a classe .img-fluid do Bootstrap para as imagens */
 #gallery .before-after-container img {
     width: 100%;
@@ -292,7 +274,6 @@ section {
     object-fit: cover;
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
-
 /* Alterações na classe overlay */
 #gallery .before-after-container img.overlay {
     position: absolute;
@@ -302,18 +283,15 @@ section {
     opacity: 0;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
-
 /* Mudanças no hover - usando transformações e transições do Bootstrap */
 #gallery .before-after-container:hover img.overlay {
     transform: scale(1);
     opacity: 1;
 }
-
 #gallery .before-after-container:hover img:not(.overlay) {
     transform: scale(1.2);
     opacity: 0.5;
 }
-
 /* Estilo dos Cards - Não há necessidade de bordas ou margens personalizadas do Bootstrap */
 #gallery .card {
     border: none;
@@ -321,13 +299,11 @@ section {
     overflow: hidden;
     margin-bottom: 20px; /* Adicionando espaçamento inferior nos cards */
 }
-
 #gallery .card-body {
     background: var(--cor-fundo); /* Usando a cor de fundo principal */
     padding: 15px;
     border-top: 1px solid var(--cor-border); /* Usando a cor de borda */
 }
-
 #gallery .card-body p {
     margin: 0;
     font-size: 16px;
@@ -336,7 +312,6 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
-
 /* Responsividade utilizando as classes do Bootstrap */
 @media (max-width: 768px) {
     #gallery .before-after-container {
@@ -350,4 +325,74 @@ section {
     #gallery .row {
         gap: 15px; /* Ajustando a distância entre os cards */
     }
+}
+/**************************************** ANTES E DEPOIS ****************************************/  
+/* Estilizando a seção FAQ */
+.faq-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Estilizando cada item do FAQ */
+.faq-item {
+    background: var(--cor-fundo);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid var(--cor-botao);
+}
+
+/* Resumo (título da pergunta) */
+.faq-item summary {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-titulo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    transition: 0.3s ease;
+}
+
+/* Ícone animado */
+.faq-item summary .icon {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-botao);
+    transition: transform 0.3s ease;
+}
+
+/* Quando o FAQ estiver aberto */
+.faq-item[open] summary .icon {
+    transform: rotate(45deg);
+}
+
+/* Estilizando o texto da resposta */
+.faq-item p {
+    color: var(--cor-paragrafo);
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Quando o FAQ está aberto, a resposta aparece suavemente */
+.faq-item[open] p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilizando links dentro das respostas */
+.faq-item p a {
+    color: var(--cor-botao);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.faq-item p a:hover {
+    text-decoration: underline;
 }
