@@ -259,3 +259,95 @@ section {
         max-width: 80px; /* Tamanho menor para dispositivos móveis */
     }
 }
+
+/**************************************** ANTES E DEPOIS ****************************************/  
+#gallery h2 {
+    font-size: 2rem;
+    color: var(--cor-titulo); /* Usando a cor do título */
+    text-align: center;
+    margin-bottom: 30px; /* Espaço abaixo do título */
+}
+
+#gallery .text-muted {
+    color: var(--cor-paragrafo) !important; /* Usando a cor do parágrafo */
+}
+
+/* Não é necessário o uso de ::after para a linha */
+#gallery h2 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#gallery .before-after-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    transition: all 0.3s ease;
+}
+
+/* Usando a classe .img-fluid do Bootstrap para as imagens */
+#gallery .before-after-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Alterações na classe overlay */
+#gallery .before-after-container img.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.2);
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Mudanças no hover - usando transformações e transições do Bootstrap */
+#gallery .before-after-container:hover img.overlay {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#gallery .before-after-container:hover img:not(.overlay) {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+/* Estilo dos Cards - Não há necessidade de bordas ou margens personalizadas do Bootstrap */
+#gallery .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Adicionando espaçamento inferior nos cards */
+}
+
+#gallery .card-body {
+    background: var(--cor-fundo); /* Usando a cor de fundo principal */
+    padding: 15px;
+    border-top: 1px solid var(--cor-border); /* Usando a cor de borda */
+}
+
+#gallery .card-body p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--cor-titulo); /* Usando a cor do título */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsividade utilizando as classes do Bootstrap */
+@media (max-width: 768px) {
+    #gallery .before-after-container {
+        height: 200px;
+    }
+
+    #gallery .card-body p {
+        font-size: 14px; /* Reduzindo o tamanho da fonte em telas menores */
+    }
+
+    #gallery .row {
+        gap: 15px; /* Ajustando a distância entre os cards */
+    }
+}
