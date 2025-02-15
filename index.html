@@ -33,7 +33,7 @@
     <header class="container-fluid d-flex align-items-center justify-content-center text-center text-white vh-100 hero-section">
         <!-- Vídeo de fundo -->
         <video autoplay muted loop playsinline class="hero-video" poster="assets/images/poster.jpg">
-            <source src="assets/images/video-1920-1080.mp4" type="video/mp4">
+            <source src="assets/images/video/video-home.mp4" type="video/mp4">
             Seu navegador não suporta a tag de vídeo.
         </video>
         <!-- Sobreposição escura -->
@@ -124,7 +124,6 @@
                     </div>
                 </article>
             </div>
-
             <!-- Botão do WhatsApp -->
             <div class="text-center mt-4">
                 <a href="https://wa.me/55479999999999?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20os%20serviços%20de%20higienização%20de%20estofados.%20Poderiam%20me%20informar%20os%20detalhes%20para%20sofás,%20colchões%20e%20cadeiras?%20Aguardo%20o%20orçamento.%20Obrigado!"
@@ -139,9 +138,93 @@
             </div>
         </section>
         <!-- Fim da Seção Benefícios -->
+       <!-- Início da Seção Higienização -->
+        <section id="galery" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Coluna do Texto -->
+                    <div class="col-md-6" data-aos="fade-right">
+                        <header>
+                            <h2 class="fw-semibold fs-5 mb-4 text-black">Transforme o seu ambiente com segurança</h2>
+                            <h3 class="text-primary">Fritz Higienização Ecológica</h3>
+                        </header>
+                        <p class="text-muted">
+                            Na Fritz Higienização, utilizamos métodos ecológicos e inovadores para higienizar seus estofados sem danificá-los. 
+                            Nosso processo não causa alergias e é totalmente seguro para você, sua família e seus animais. Oferecemos uma solução 
+                            de limpeza que respeita o meio ambiente e proporciona resultados surpreendentes.
+                        </p>
+                        <div class="signature-container my-4">
+                            <img src="assets/images/assinatura.png" alt="Assinatura de cliente da Fritz Higienização" class="img-fluid signature custom-signature">
+                        </div>
+                        <!-- Botão do WhatsApp -->
+                        <div class="text-center mt-4 d-flex">
+                            <a href="https://wa.me/55479999999999?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20os%20serviços%20de%20higienização%20de%20estofados.%20Poderiam%20me%20informar%20os%20detalhes%20para%20sofás,%20colchões%20e%20cadeiras?%20Aguardo%20o%20orçamento.%20Obrigado!"
+                                class="btn-whatsapp" 
+                                target="_blank" 
+                                rel="noopener" 
+                                aria-label="Solicitar orçamento via WhatsApp"
+                                data-aos="fade-up" 
+                                data-aos-delay="300">
+                                <i class="bi bi-whatsapp"></i> Peça um orçamento
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Coluna do Vídeo Principal e Miniaturas -->
+                    <div class="col-md-6" data-aos="fade-left">
+                        <figure class="main-video mb-3">
+                            <video id="mainVideo" class="w-100" autoplay loop muted playsinline>
+                                <source src="assets/images/video/video1.mp4" type="video/mp4">
+                            </video>
+                          <!-- <figcaption>Vídeo principal demonstrando os resultados da higienização ecológica</figcaption> -->
+                        </figure>
+                        <!-- Miniaturas de Vídeos -->
+                        <div class="row g-2">
+                            <div class="col-3">
+                                <figure>
+                                    <video class="video-thumb w-100" data-video="assets/images/video/video1.mp4" muted>
+                                        <source src="assets/images/video/video1.mp4" type="video/mp4">
+                                    </video>
+                                   <!-- <figcaption>Miniatura 1</figcaption> -->
+                                </figure>
+                            </div>
+                            <div class="col-3">
+                                <figure>
+                                    <video class="video-thumb w-100" data-video="assets/images/video/video2.mp4" muted>
+                                        <source src="assets/images/video/video2.mp4" type="video/mp4">
+                                    </video>
+                                    <!-- <figcaption>Miniatura 1</figcaption> -->
+                                </figure>
+                            </div>
+                            <div class="col-3">
+                                <figure>
+                                    <video class="video-thumb w-100" data-video="assets/images/video/video3.mp4" muted>
+                                        <source src="assets/images/video/video3.mp4" type="video/mp4">
+                                    </video>
+                                     <!-- <figcaption>Miniatura 1</figcaption> -->
+                                </figure>
+                            </div>
+                            <div class="col-3">
+                                <figure>
+                                    <video class="video-thumb w-100" data-video="assets/images/video/video4.mp4" muted>
+                                        <source src="assets/images/video/video4.mp4" type="video/mp4">
+                                    </video>
+                                     <!-- <figcaption>Miniatura 1</figcaption> -->
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fim da Seção Higienização -->
+
+
+
         
     </main>
     <!-- Scripts -->
+    <script src="assets/js/carrossel.js"></script>
+    <script src="assets/js/galeria.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>

@@ -233,3 +233,16 @@ section {
         font-size: 16px;
     }
 }
+
+
+/**************************************** VIDEOS ****************************************/
+.video-thumb {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.custom-signature {
+    max-width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
