@@ -62,30 +62,30 @@
     </head>
 <body>
     <!--SEÇÃO HERO-->
-    <header class="container-fluid d-flex align-items-center justify-content-center text-center text-white vh-100 hero-section">
+    <header class="container-fluid d-flex align-items-center justify-content-center text-center text-white vh-100 hero-section position-relative">
         <!-- Vídeo de fundo -->
-        <video id="hero-video" muted loop playsinline class="hero-video" poster="assets/images/poster.jpg">
+        <video id="hero-video" autoplay muted loop playsinline class="hero-video" poster="assets/images/poster.jpg" aria-hidden="true">
             <source src="assets/images/video/video-home.mp4" type="video/mp4">
         </video>
         <!-- Sobreposição escura -->
-        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-overlay position-absolute w-100 h-100 bg-dark opacity-75"></div>
         <!-- Conteúdo principal -->
         <div class="position-relative z-3">
             <!-- Logo -->
-            <figure class="mb-4" data-aos="fade-down" data-aos-delay="200">
+            <figure class="mb-4 opacity-100" data-aos="fade-down" data-aos-delay="200">
                 <img src="assets/images/logo-300-150.svg" alt="Logotipo da Fritz Higienização" class="img-fluid" style="max-width:300px; height:auto;">
             </figure>
             <!-- Título -->
-            <h1 class="display-4 fw-bold" id="hero-title" data-aos="fade-up" data-aos-delay="400">
+            <h1 class="display-4 fw-bold opacity-100" id="hero-title" data-aos="fade-up" data-aos-delay="400">
                 Higienização e Impermeabilização
             </h1>
             <!-- Descrição -->
-            <p class="lead mb-4" id="hero-description" data-aos="fade-up" data-aos-delay="600" aria-labelledby="hero-title">
+            <p class="lead mb-4 opacity-100" id="hero-description" data-aos="fade-up" data-aos-delay="600" aria-labelledby="hero-title">
                 Cuide da saúde e bem-estar do seu lar com nossos serviços de limpeza e higienização profissional de estofados.
             </p>
             <!-- Botão CTA -->
             <a href="https://wa.me/55479999999999?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20os%20serviços%20de%20higienização%20de%20estofados.%20Poderiam%20me%20informar%20os%20detalhes%20para%20sofás,%20colchões%20e%20cadeiras?%20Aguardo%20o%20orçamento.%20Obrigado!"
-                class="btn-whatsapp" 
+                class="btn-whatsapp opacity-100" 
                 target="_blank" 
                 rel="noopener" 
                 aria-label="Solicitar orçamento via WhatsApp"
@@ -100,56 +100,56 @@
         <!-- Início da Seção Benefícios -->
         <section class="container benefits-section py-5">
             <div class="text-center mb-5">
-                <h2 class="fw-bold" data-aos="fade-up">Benefícios dos Nossos Serviços</h2>
-                <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="fw-bold opacity-100" data-aos="fade-up">Benefícios dos nossos serviços</h2>
+                <p class="lead opacity-100" data-aos="fade-up" data-aos-delay="200">
                     Além de limpeza profunda, garantimos mais proteção, bem-estar e conforto para você e sua família.
                 </p>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center" role="list">
                 <!-- Benefício 1 -->
-                <article class="col" data-aos="fade-up" data-aos-delay="300">
+                <article class="col opacity-100" data-aos="fade-up" data-aos-delay="300" aria-label="Saúde e Conforto">
                     <div class="p-4 bg-white shadow-sm rounded-3 h-100">
-                        ❤️
+                        <i class="bi bi-heart text-danger fs-2"></i>
                         <h3 class="mt-3">Saúde e Conforto</h3>
                         <p>Higienização profunda para garantir um ambiente mais saudável.</p>
                     </div>
                 </article>
                 <!-- Benefício 2 -->
-                <article class="col" data-aos="fade-up" data-aos-delay="400">
+                <article class="col opacity-100" data-aos="fade-up" data-aos-delay="400" aria-label="Durabilidade">
                     <div class="p-4 bg-white shadow-sm rounded-3 h-100">
-                        🔒
+                        <i class="bi bi-shield-lock text-primary fs-2"></i>
                         <h3 class="mt-3">Durabilidade</h3>
                         <p>Impermeabilização que protege seus estofados por mais tempo.</p>
                     </div>
                 </article>
                 <!-- Benefício 3 -->
-                <article class="col" data-aos="fade-up" data-aos-delay="500">
+                <article class="col opacity-100" data-aos="fade-up" data-aos-delay="500" aria-label="Atendimento Ágil">
                     <div class="p-4 bg-white shadow-sm rounded-3 h-100">
-                        ⏰
+                        <i class="bi bi-clock text-warning fs-2"></i>
                         <h3 class="mt-3">Atendimento Ágil</h3>
                         <p>Comodidade e rapidez para um serviço eficiente.</p>
                     </div>
                 </article>
                 <!-- Benefício 4 -->
-                <article class="col" data-aos="fade-up" data-aos-delay="600">
+                <article class="col opacity-100" data-aos="fade-up" data-aos-delay="600" aria-label="Sustentabilidade">
                     <div class="p-4 bg-white shadow-sm rounded-3 h-100">
-                        🌱
+                        <i class="bi bi-tree text-success fs-2"></i>
                         <h3 class="mt-3">Sustentabilidade</h3>
                         <p>Utilizamos produtos ecológicos e processos sustentáveis, cuidando do meio ambiente.</p>
                     </div>
                 </article>
                 <!-- Benefício 5 -->
-                <article class="col" data-aos="fade-up" data-aos-delay="700">
+                <article class="col opacity-100" data-aos="fade-up" data-aos-delay="700" aria-label="Qualidade Garantida">
                     <div class="p-4 bg-white shadow-sm rounded-3 h-100">
-                        🏆
+                        <i class="bi bi-award text-info fs-2"></i>
                         <h3 class="mt-3">Qualidade Garantida</h3>
                         <p>Serviços de alta qualidade com garantia de satisfação.</p>
                     </div>
                 </article>
                 <!-- Benefício 6 -->
-                <article class="col" data-aos="fade-up" data-aos-delay="800">
+                <article class="col opacity-100" data-aos="fade-up" data-aos-delay="800" aria-label="Conforto e Bem-Estar">
                     <div class="p-4 bg-white shadow-sm rounded-3 h-100">
-                        🏡❤️
+                        <i class="bi bi-house-heart text-danger fs-2"></i>
                         <h3 class="mt-3">Conforto e Bem-Estar</h3>
                         <p>Deixe sua casa mais aconchegante com estofados limpos e perfumados.</p>
                     </div>
@@ -158,7 +158,7 @@
             <!-- Botão do WhatsApp -->
             <div class="text-center mt-4">
                 <a href="https://wa.me/55479999999999?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20os%20serviços%20de%20higienização%20de%20estofados.%20Poderiam%20me%20informar%20os%20detalhes%20para%20sofás,%20colchões%20e%20cadeiras?%20Aguardo%20o%20orçamento.%20Obrigado!"
-                    class="btn-whatsapp" 
+                    class="btn-whatsapp opacity-100" 
                     target="_blank" 
                     rel="noopener" 
                     aria-label="Solicitar orçamento via WhatsApp"
@@ -174,7 +174,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Coluna do Texto -->
-                    <div class="col-md-6 text-center text-md-start" data-aos="fade-right">
+                    <article class="col-md-6 text-center text-md-start" data-aos="fade-right">
                         <header>
                             <h2 class="fw-semibold fs-5 mb-4 text-black">Transforme o seu ambiente</h2>
                             <h3 class="text-primary">Fritz Higienização</h3>
@@ -196,70 +196,93 @@
                                 <i class="bi bi-whatsapp"></i> Peça um orçamento
                             </a>
                         </div>
-                    </div>
+                    </article>
+        
                     <!-- Coluna do Carrossel de Vídeos -->
                     <div class="col-md-6" data-aos="fade-left">
                         <!-- Carrossel Bootstrap -->
                         <div id="video-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <!-- Vídeo Principal -->
-                                <div class="carousel-item active">
+                                <figure class="carousel-item active">
                                     <video class="d-block w-100 video-principal" autoplay loop muted playsinline>
                                         <source src="assets/images/video/video1.mp4" type="video/mp4">
+                                        <source src="assets/images/video/video1.webm" type="video/webm">
+                                        <img src="assets/images/video/video1.jpg" alt="Prévia do vídeo">
                                     </video>
-                                </div>
-                                <div class="carousel-item">
+                                    <figcaption class="text-muted">Veja nosso processo de higienização</figcaption>
+                                </figure>
+                                
+                                <figure class="carousel-item">
                                     <video class="d-block w-100 video-principal" autoplay loop muted playsinline>
                                         <source src="assets/images/video/video2.mp4" type="video/mp4">
+                                        <source src="assets/images/video/video2.webm" type="video/webm">
+                                        <img src="assets/images/video/video2.jpg" alt="Prévia do vídeo">
                                     </video>
-                                </div>
-                                <div class="carousel-item">
+                                    <figcaption class="text-muted">Processo de higienização de sofás</figcaption>
+                                </figure>
+
+                                <figure class="carousel-item">
                                     <video class="d-block w-100 video-principal" autoplay loop muted playsinline>
                                         <source src="assets/images/video/video3.mp4" type="video/mp4">
+                                        <source src="assets/images/video/video3.webm" type="video/webm">
+                                        <img src="assets/images/video/video3.jpg" alt="Prévia do vídeo">
                                     </video>
-                                </div>
-                                <div class="carousel-item">
+                                    <figcaption class="text-muted">Processo de higienização de sofás</figcaption>
+                                </figure>
+
+                                <figure class="carousel-item">
                                     <video class="d-block w-100 video-principal" autoplay loop muted playsinline>
                                         <source src="assets/images/video/video4.mp4" type="video/mp4">
+                                        <source src="assets/images/video/video4.webm" type="video/webm">
+                                        <img src="assets/images/video/video4.jpg" alt="Prévia do vídeo">
                                     </video>
-                                </div>
+                                    <figcaption class="text-muted">Processo de higienização de sofás</figcaption>
+                                </figure>
                             </div>
+        
                             <!-- Controles (setas) -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#video-carousel" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#video-carousel" data-bs-slide="prev" aria-label="Vídeo anterior">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#video-carousel" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#video-carousel" data-bs-slide="next" aria-label="Próximo vídeo">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
                             </button>
                         </div>
+        
                         <!-- Miniaturas de Vídeos -->
                         <div class="d-flex justify-content-center gap-2 mt-3">
                             <video class="video-thumb" data-bs-target="#video-carousel" data-bs-slide-to="0" muted>
                                 <source src="assets/images/video/video1.mp4" type="video/mp4">
+                                <source src="assets/images/video/video1.webm" type="video/webm">
                             </video>
                             <video class="video-thumb" data-bs-target="#video-carousel" data-bs-slide-to="1" muted>
                                 <source src="assets/images/video/video2.mp4" type="video/mp4">
+                                <source src="assets/images/video/video2.webm" type="video/webm">
                             </video>
-                            <video class="video-thumb" data-bs-target="#video-carousel" data-bs-slide-to="2" muted>
+
+                            <video class="video-thumb" data-bs-target="#video-carousel" data-bs-slide-to="1" muted>
                                 <source src="assets/images/video/video3.mp4" type="video/mp4">
+                                <source src="assets/images/video/video3.webm" type="video/webm">
                             </video>
-                            <video class="video-thumb" data-bs-target="#video-carousel" data-bs-slide-to="3" muted>
+
+                            <video class="video-thumb" data-bs-target="#video-carousel" data-bs-slide-to="1" muted>
                                 <source src="assets/images/video/video4.mp4" type="video/mp4">
+                                <source src="assets/images/video/video4.webm" type="video/webm">
                             </video>
                         </div>
                     </div>
+        
                 </div>
             </div>
-        </section>
+        </section>     
         <!-- Fim da Seção Higienização -->
         <!-- Seção Galeria de Antes e Depois -->
         <section id="gallery" class="py-5">
             <div class="container">
                 <!-- Cabeçalho da Galeria -->
                 <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
-                    <h2 class="fw-bold">Nossos Antes e Depois</h2>
+                    <h2 class="fw-bold">Nossos antes e depois</h2>
                     <p class="text-muted">Veja os resultados incríveis dos nossos serviços de higienização.</p>
                 </div>
                 <!-- Grid de Imagens -->
@@ -357,7 +380,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Lado Esquerdo - Texto e Botões -->
-                    <article class="col-lg-6 text-center text-lg-start" data-aos="fade-right" data-aos-delay="200">
+                    <article class="col-lg-6 text-center text-lg-start opacity-100" data-aos="fade-right" data-aos-delay="200">
                         <header>
                             <h2 class="fw-bold">Sobre a Fritz Higienização</h2>
                         </header>
@@ -367,7 +390,7 @@
                             removemos sujeiras, ácaros e bactérias, proporcionando um espaço mais saudável para você e sua família.
                         </p>      
                         <!-- Botões de Ação -->
-                        <nav class="d-flex justify-content-center justify-content-lg-start mt-4" data-aos="fade-up" data-aos-delay="400">
+                        <nav class="d-flex justify-content-center justify-content-lg-start mt-4 opacity-100" data-aos="fade-up" data-aos-delay="400">
                             <a href="https://wa.me/55479999999999?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.%20Poderia%20me%20ajudar?" 
                                 class="btn btn-success rounded-circle me-2 d-flex align-items-center justify-content-center" 
                                 style="width: 50px; height: 50px;" 
@@ -391,17 +414,17 @@
                             </a>
                         </nav>       
                         <!-- Assinatura -->
-                        <footer data-aos="fade-up" data-aos-delay="600">
+                        <footer class="opacity-100" data-aos="fade-up" data-aos-delay="600">
                             <p class="mt-4 fst-italic">Equipe Fritz Higienização</p>
                         </footer>
                     </article>      
                     <!-- Lado Direito - Vídeo -->
-                    <figure class="col-lg-6 text-center mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-                        <video controls class="w-100 rounded shadow">
+                    <figure class="col-lg-6 text-center mt-4 mt-lg-0 opacity-100" data-aos="fade-left" data-aos-delay="200">
+                        <video controls playsinline preload="metadata" class="w-100 rounded shadow" aria-describedby="video-caption">
                             <source src="assets/images/video/VIDEO-ABOUT.mp4" type="video/mp4">
                             Seu navegador não suporta a reprodução de vídeos.
                         </video>
-                        <figcaption class="text-muted mt-2">Conheça o nosso processo de higienização</figcaption>
+                        <figcaption id="video-caption" class="text-muted mt-2">Conheça o nosso processo de higienização</figcaption>
                     </figure>
                 </div>
             </div>
@@ -411,7 +434,7 @@
         <section id="faq" class="py-5">
             <div class="container">
                 <header class="text-center mb-5" data-aos="fade-up">
-                    <h2 class="fw-bold">Perguntas Frequentes</h2>
+                    <h2 class="fw-bold">Perguntas frequentes</h2>
                     <p class="text-muted">Tire suas dúvidas sobre nossos serviços de higienização.</p>
                 </header>
                 <!-- FAQ estilizado com AOS -->
@@ -473,7 +496,7 @@
                 </div>
                 <!-- Descrição SEO -->
                 <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <h4>Sobre Nós</h4>
+                    <h4>Sobre nós</h4>
                     <p>Somos especialistas em higienização e impermeabilização de estofados. Nosso objetivo é garantir saúde, conforto e durabilidade para sua casa e ambiente de trabalho. Com técnicas sustentáveis e produtos ecológicos, cuidamos do seu estofado com qualidade e agilidade.</p>
                 </div>
             </section>
